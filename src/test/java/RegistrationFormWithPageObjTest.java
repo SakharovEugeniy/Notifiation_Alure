@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 
@@ -22,6 +23,7 @@ public class RegistrationFormWithPageObjTest extends TestBase {
 
 
     @Test
+    @DisplayName("Проверка полной формы регистрации")
     public void registrationFullFormWithPageObjTest() {
 
         registrationPage.openPage()
@@ -53,6 +55,7 @@ public class RegistrationFormWithPageObjTest extends TestBase {
 
 
     @Test
+    @DisplayName("Проверка минимальной формы регистрации")
     public void registrationMinimalFormWithPageObjTest() {
 
         registrationPage.openPage()
@@ -71,6 +74,7 @@ public class RegistrationFormWithPageObjTest extends TestBase {
 
 
     @Test
+    @DisplayName("Проверка невозможности регистрации без заполненной формы")
     public void registrationEmptyFormWithPageObjTest() {
 
         registrationPage.openPage()
